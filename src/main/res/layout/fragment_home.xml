@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/shape_round_background" />
+
+        <TextView
+            android:id="@+id/inText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Pendapatan"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/outText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inText"
+            android:layout_alignStart="@id/inText"
+            android:layout_marginTop="15dp"
+            android:text="Pengeluaran"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="30dp"
+            android:background="#E91E63" />
+        <TextView
+            android:id="@+id/inSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/outSaldo"
+            android:layout_alignTop="@id/inText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/white"
+            android:ems="10"
+            android:gravity="end"
+            android:text="18000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/outSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/outText"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:gravity="end"
+            android:text="18000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/sumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outText"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="40dp"
+            android:text="Saldo"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/sumSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignBottom="@id/sumSaldo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="139dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:gravity="end"
+            android:text="0"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/batas"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="180dp"
+            />
+
+        <ListView
+            android:id="@+id/listTransaksi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/batas"
+            android:layout_margin="30dp"
+            android:padding="5dp" />
+    </RelativeLayout>
+</FrameLayout>
